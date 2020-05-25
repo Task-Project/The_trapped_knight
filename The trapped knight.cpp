@@ -7,7 +7,9 @@
 #define my 80
 using namespace std;
 
-int fx=1250,fy=1250,sx=50,sy=50;
+DWORD fx=GetSystemMetrics(SM_CXSCREEN);
+DWORD fy=GetSystemMetrics(SM_CYSCREEN);
+int sx=50,sy=50,c;
 int mat[mx][my];
 
 void draw_matrix(int x,int y,int w){
